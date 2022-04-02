@@ -55,6 +55,6 @@ ypred = RandomForest.predict(Xtest)
 
 st.write("The result is:")
 
-st.write(confusion_matrix(ytest, ypred))
+st.write(pd.DataFrame(confusion_matrix(ytest, ypred)))
 
-st.write(classification_report(ytest, ypred))
+st.write(pd.DataFrame(classification_report(ytest, ypred)))
