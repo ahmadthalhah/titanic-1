@@ -57,6 +57,6 @@ st.write("The result is:")
 
 # st.write(pd.DataFrame(confusion_matrix(ytest, ypred)))
 
-report = classification_report(ytest, y_pred,output_dict=True)
+report = classification_report(ytest, ypred,output_dict=True)
 df = pd.DataFrame(report).transpose()
 st.write(df)
