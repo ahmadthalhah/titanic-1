@@ -38,6 +38,11 @@ titanic_data['Embarked'] = labelencoder2.fit_transform(titanic_data['Embarked'])
 
 X = titanic_data.drop('Survived',axis=1)
 y = titanic_data['Survived']
+
+
+from sklearn.model_selection import train_test_split
+
+
 Xtrain, Xtest, ytrain, ytest = train_test_split(X, y,random_state=1234,test_size=0.2)
 
 
